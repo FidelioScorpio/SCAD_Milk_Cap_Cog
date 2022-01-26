@@ -40,9 +40,9 @@ module roundedCornerPolygon(radius, height, roundedness, edges)
 }
 
 milkCap();
-difference()
+translate([0,0,10]) color("red") difference()
 {
-    roundedCornerPolygon(33, 0.8, 5, 6);
+    roundedCornerPolygon(34, 0.8, 5, 6);
     translate([0,0,-2]) cylinder(d=35, h=20, $fn = 90);
 }
 
